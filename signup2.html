@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+       h1{
+        text-shadow: 0px 0px 5px;
+        font-size: x-large;
+       }
+       .container{
+        width: 400px;
+        background-color: transparent;
+        box-shadow: 0px 0px 100px rgb(158, 251, 158);
+        backdrop-filter: blur(30px);
+        background-color: black;
+        opacity: 70%;
+        
+
+       }
+        label[for="firstname"],
+        label[for="lastname"],
+        label[for="nickname"],
+        label[for="phone"],
+        label[for="email"],
+        label[for="password"],
+        label[for="country"],
+        label[for="address"],
+        label[for="confirm_password"]{
+    
+        text-align: center;
+        text-size-adjust: 0px;
+
+    
+    }
+
+    body{
+        backdrop-filter:blur(px);
+    }
+    </style>
+</head>
+
+<body style="background-image: url(waste.jpeg);background-repeat: no-repeat;background-size: cover;">
+    <div class="flex justify-center items-center h-screen" style="margin-top: 200px;margin-bottom:200px;">
+        <div class="container mx-auto bg-white p-8 rounded-lg shadow-md">
+            <h1 class="text-3xl text-center mb-4 text-white">Sign Up</h1>
+            <form action="submit.php" method="post">
+                <label for="firstname" class="block mb-2 text-white" style="text-shadow: 0px 0px 100px rgb(0, 0, 0);">Firstname</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Enter your firstname" required
+                    class="w-full px-4 py-2 mb-4 border-4 border-green-600 rounded-lg bg-transparent">
+
+                <label for="lastname" class="block mb-2 text-white ">Lastname</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter your lastname" required
+                    class="w-full px-4 py-2 mb-4 border-4 border-green-600 rounded-lg bg-transparent">
+
+                <label for="nickname" class="block mb-2 text-white">Nickname</label>
+                <input type="text" id="nickname" name="nickname" placeholder="Enter your nickname" required
+                    class="w-full px-4 py-2 mb-4 border-4 border-green-600 rounded-lg bg-transparent">
+
+                <label for="email" class="block mb-2 text-white">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email address" required
+                class="w-full px-4 py-2 mb-4 border-4 border-green-600 rounded-lg bg-transparent">
+
+                <label for="country" class="block mb-2 text-white">Country</label>
+                <input type="text" id="country" name="country" placeholder="Enter your Country_name" required
+                class="w-full px-4 py-2 mb-4 border-4 border-green-600 rounded-lg bg-transparent">
+                
+                <label for="phone" class="block mb-2 text-white">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone_number" required
+                    class="w-full px-4 py-2 mb-4 border-4 border-green-600 rounded-lg bg-transparent">
+
+                <label for="address" class="block mb-2 text-white">Address</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" required
+                class="w-full px-4 py-2 mb-4 border-4 border-green-600 rounded-lg bg-transparent">
+    
+
+                <label for="password" class="block mb-2 text-white">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter new password" required
+                    class="w-full px-4 py-2 mb-4 border-4 border-green-600 rounded-lg bg-transparent">
+
+                <label for="confirm_password" class="block mb-2 text-white">Confirm Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required
+                    class="w-full px-4 py-2 mb-4 border-4 border-green-600 rounded-lg bg-transparent">
+
+                <div class="text-center">
+                    <input type="submit" value="Sign Up"
+                        class="w-40 px-4 py-2 bg-green-500 text-white rounded-lg cursor-pointer hover:bg-black">
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-white" style="text-align: center;">Already have an account! <a href="loginwithtailwind.html" class="text-blue-600">Login</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
